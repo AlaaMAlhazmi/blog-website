@@ -9,14 +9,15 @@
 ## Project Overview
 
 Udacity - Front End Web Developer - Project 1
+<br>
 HTML, CSS
 
 ## Project requirements
 
-• multi-page blog website.
-• page styling with HTML and CSS.
-• Flexbox, and CSS Grid for the structure.
-• respnsive layout.
+- multi-page blog website.
+- page styling with HTML and CSS.
+- Flexbox, and CSS Grid for the structure.
+- respnsive layout.
 
 ## Instructions for Running the Site
 
