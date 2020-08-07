@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-* [Instructions](#Project Overview)
-* [Instructions](#Project requirements)
-* [Instructions](#Instructions for Running the Site)
+* [Project Overview](#Project-Overview)
+* [Project requirements](#Project-requirements)
+* [Instructions for Running the Site](#Instructions-for-Running-the-Site)
 
 ## Project Overview
 
@@ -14,7 +14,8 @@ HTML, CSS
 ## Project requirements
 
 • multi-page blog website.
-• page styling with HTML and CSS. 
+• page styling with HTML and CSS.
+• Flexbox, and CSS Grid for the structure.
 • respnsive layout.
 
 ## Instructions for Running the Site
