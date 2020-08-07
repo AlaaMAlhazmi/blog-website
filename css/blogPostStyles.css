@@ -1,0 +1,46 @@
+.post-content {
+	padding: 2em;
+
+
+}
+
+.post-content img{
+	max-width: 55em;
+	max-height: 55em;
+}
+
+.post-content figcaption{
+	color: gray;
+	padding-bottom: 1em;
+}
+
+.title {
+	color: #495464;
+}
+
+.author {
+	color: #CF5151;
+}
+
+.other-posts {
+	padding: 2em;
+}
+
+.other-posts h5 {
+	font-family: 'Abril Fatface', cursive;
+	text-transform: capitalize;
+	color: #495464;
+}
+
+@media (max-width: 992px){
+	.post-content{
+		grid-column: 1/-1;
+	}
+
+	.other-posts {
+		grid-column: 1/-1;
+		border-top: 1px solid lightgray;
+		border-left: none !important;
+		padding-top: 2em;
+	}
+}

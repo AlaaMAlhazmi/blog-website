@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import "header.css";
+@import "footer.css";
+@import "indexStyles.css";
+@import "aboutStyles.css";
+@import "blogPostStyles.css";
+
+body {
+	background-color: #FEFDFC;
+}
+
+.page-container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+}
+
+.description {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 15em;
+  margin-right: 15em;
+  margin-top: 2em;
+  text-align: center;
+  background-color: rgba(175, 148, 105, .2); /* 50% opacity black background will keep your text fully opaque */
+}
+
+.description h4{
+  color: #495464;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.divider {
+	padding-right: 8em;
+	padding-left: 8em;
+}
+
+a:hover {
+  color: #EDAF4B;
+}
+
+/* responsiveness */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px){
+	.description {
+	  margin-left: 4em;
+	  margin-right: 4em;
+	  margin-top: 1em;
+	  text-align: center;
+	  background-color: rgba(175, 148, 105, .2); /* 50% opacity black background will keep your text fully opaque */
+	}
+
+	.description h4{
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .description h4{
+		font-size: 1.5em;
+	}
+}

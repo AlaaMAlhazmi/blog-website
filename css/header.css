@@ -1,0 +1,65 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #003f5a;
+  padding-right: 8em;
+  padding-left: 8em;
+  padding-top: 2em;
+}
+
+.blog-icon {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.8em;
+}
+
+.blog-icon h4 {
+  font-size: 3em;
+  color: #FDB644;
+}
+
+.nav-item {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.nav-item a {
+  color: #003f5a;
+}
+
+.navbar-nav a:hover {
+  background-color: rgba(253, 182, 68, .2); 
+}
+
+.social a {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: #CF5151;
+  font-size: 2em;
+}
+
+@media (max-width: 992px){
+  .page-header {
+    flex-direction: column;
+    font-size: .8em;
+  }
+
+  .navbar-nav {
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .page-header {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .nav-item {
+    font-size: 1.2em;
+  }
+}

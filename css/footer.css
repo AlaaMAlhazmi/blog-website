@@ -1,0 +1,29 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #003f5a;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.credits {
+	color: #CF5151;
+}
+
+@media (max-width: 992px){
+  .page-footer {
+    flex-direction: column;
+    font-size: .8em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+  .page-footer {
+    font-size: 1.2em;
+  }
+}
