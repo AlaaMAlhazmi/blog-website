@@ -1,7 +1,69 @@
+.main-content {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	margin-left: 10em;
+	margin-right: 10em;
+}
+
 .post-content {
 	padding: 2em;
+	border-right: 1px solid lightgray;
+}
 
+.post-content h1 {
+	margin: 0px;
+}
 
+.post-content .date {
+	color: gray;
+	margin: 0px;
+	margin-bottom: 1em;
+}
+
+.sidebar {
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.author-section {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding: 1em;
+}
+
+.author-section img {
+	height: 14em;
+  	width: 14em;
+  	border-radius: 50%;
+}
+
+.author-section .name {
+	font-family: 'Abril Fatface', cursive;
+	text-transform: uppercase;
+	color: #FDB644;
+	padding-top: .5em;
+	font-size: 1.5em;
+	margin: 0px;
+}
+
+.author-section .info {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #003f5a;
+	font-size: 1em;
+}
+
+.author-section .social a{
+	color: #003f5a;
+}
+
+.author-section .social a:hover{
+	color: #FDB644;
 }
 
 .post-content img{
@@ -19,28 +81,50 @@
 }
 
 .author {
-	color: #CF5151;
+	color: #FDB644;
 }
 
 .other-posts {
-	padding: 2em;
+	padding: 1em;
 }
 
-.other-posts h5 {
+.other-posts a, li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #003f5a;
+	font-size: 1em;
+	text-decoration: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h1 {
 	font-family: 'Abril Fatface', cursive;
 	text-transform: capitalize;
-	color: #495464;
+	color: #CF5151;
 }
 
+/* Responsiveness */
 @media (max-width: 992px){
-	.post-content{
-		grid-column: 1/-1;
+	.main-content {
+		margin-left: 1em;
+    	margin-right: 1em;
 	}
 
-	.other-posts {
+	.post-content{
 		grid-column: 1/-1;
-		border-top: 1px solid lightgray;
-		border-left: none !important;
-		padding-top: 2em;
+		border-right: 0px;
+		border-bottom: 1px solid lightgray;
 	}
+
+	.sidebar{
+		grid-column: 1/-1;
+		padding: .5;
+	}
+
+	.author-section img {
+	height: 10em;
+  	width: 10em;
+  	border-radius: 50%;
+}
 }

@@ -1,3 +1,15 @@
+.description {
+  padding: 1em;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 2em;
+  text-align: center;
+  background-color: rgba(175, 148, 105, .2);
+  color: #495464;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+}
+
 .main-section {
   display: grid;
   grid-template-columns: repeat(6,1fr);
@@ -27,7 +39,7 @@
   grid-column: span 2;
 }
 
-.blogPost {
+.blog-post-card {
   position: relative;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -37,6 +49,9 @@
 
 .text-block {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.5);
   color: #003f5a;
   bottom: 1.5em;
@@ -47,37 +62,55 @@
 
 .post-title {
   position: absolute;
-  top: 50%;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  margin-top: -25px;
   font-family: 'Abril Fatface', cursive;
   text-align: center;
 }
 
-.post-title h5{
+.post-title h2{
   text-transform: uppercase;
-  font-size: 1.5vw;
 }
 
-.post-title h6{
-  text-transform: capitalize;
-  font-size: 1vw;
-  color: black;
-}
 
 .text-block a {
-  color: #003f5a;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: 2em;
+  padding-left: 2em;
+  border-radius: 50px;
+  background: transparent;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  border: 2px solid #404040;
+  color: #404040;
+  font-size: 1em;
 }
 
 .text-block a:hover {
-  color: #EDAF4B;
-  text-shadow: 2px 2px 4px #000000;
+  background: #404040;
+  color: white;
+}
+
+@media (max-width: 576px) and (max-width: 768px){
+  .description {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 992px){
+  .description {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+
+  .main-section {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   .post1 {
   grid-column: 1/-1;
   }
@@ -93,48 +126,21 @@
   .post4 {
   grid-column: 1/-1;
   }
-
-  .main-section {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .post-title h5{
-    font-size: 1em;
-  }
-
-  .post-title h6{
-    font-size: .8em;
-  }
 }
 
-@media (max-width: 992px){
-
-  .main-section {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .post-title h5{
-    font-size: 1em;
-  }
-
-  .post-title h6{
-    font-size: .8em;
-  }
+@media (max-width: 768px){
 
 }
 
-@media (min-width: 576px) and (max-width: 768px){
-  .post-title h5{
-  font-size: 4vw;
+@media (max-width: 576px){
+  .description {
+    font-size: 1em;
   }
 
-  .post-title h6{
-    font-size: 3vw;
+  .text-block a {
+    font-size: .5em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
+
 }

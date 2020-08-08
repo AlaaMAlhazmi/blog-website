@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title> Blog Name </title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d9c9664b69.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css "href="css/main.css">
@@ -17,15 +16,15 @@
     <!--header-->
     <header>
       <nav class="page-header">
-        <div class="blog-icon justify-content-center align-items-center d-flex">
-          <h4> ❝ </h4>
+        <div class="blog-icon">
+          <p> ❝ </p>
           <div>Blog <br> Name</div>
         </div>
-        <div class="navbar-expand-sm text-center">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a href="index.html" class="nav-link  px-3">Home</a></li>
-              <li class="nav-item"><a href="about.html" class="nav-link  px-3">About</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link  px-3">Contact</a></li>
+        <div class="navigation">
+            <ul class="navbar">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="blogPost.html" class="nav-link">Blog</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
           </div>
           <div class="social">
@@ -43,38 +42,42 @@
     <div class="main-content">
 
       <div class="post-content">
-        <img src="img/banner.JPG" alt="profile pic">
-        <figcaption>* Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figcaption> 
-        <h5 class="title">Lorem ipsum dolor sit amet, consectetur</h5>
-        <h6 class="author">Lorem ipsum.</h6>
+        <h1>Post Title</h1>
+        <p class="date">24.09.2019</p>
+        <div claa="post-image">
+          <img src="img/banner.JPG" alt="profile pic">
+          <figcaption>* Lorem ipsum dolor sit amet, consectetur adipisicing elit.</figcaption> 
+        </div>
+        <h2 class="title">Lorem ipsum dolor sit amet, consectetur</h2>
+        <h3 class="author">Lorem ipsum.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, voluptate. Quod, nostrum. Sit veniam molestiae doloribus voluptatum sed omnis odit ullam quidem modi nesciunt, perspiciatis voluptates molestias, optio eos debitis, est magnam consequuntur. Atque harum suscipit repellendus enim odio ratione magnam amet rerum quasi quae neque, voluptatem consequuntur, aliquam eius.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia tempore laboriosam sit neque. Nihil, illo et! Saepe labore culpa quis ad natus dolor cupiditate officia laboriosam molestiae fugit tenetur, molestias obcaecati ipsam, vitae illo placeat fuga consequatur eos quaerat iste et aliquam ratione tempore. Nisi optio expedita maiores dolores quibusdam ipsa nulla, facilis, ad tempora deleniti laudantium, repellendus molestias recusandae!</p>
+        <h3 class="author">Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea architecto quod debitis omnis consectetur dolorum! Dolores culpa suscipit, porro et nam aliquid perferendis nobis, magni quasi, cumque quo optio commodi ut soluta nulla consequuntur laboriosam laborum ratione. Doloribus earum in magni distinctio non sequi, sapiente modi id nulla architecto natus facilis provident nisi beatae nam a est. Totam, nulla, praesentium facere nobis iste iusto laudantium laboriosam assumenda recusandae quaerat quae nihil a corrupti sed suscipit inventore obcaecati saepe dolor?</p>
       </div>
 
-      <div class="other-posts border-left">
-        <h5> Other Posts: </h5>
-        <ul>
+      <div class="sidebar">
+        <div class="author-section" >
+          <div><img src="img/original.jpg" alt="profile pic" class="rounded-circle"></div>
+          <p class="name"><u>Author Name</u></p>
+          <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-twitter-square px-2"></i></a>
+            <a href="#"><i class="fab fa-instagram-square px-2"></i></a>
+            <a href="#"><i class="fab fa-facebook-square px-2"></i></a>
+          </div>
+        </div>
+
+        <div class="other-posts">
+          <h1> Other Posts: </h1>
+          <ul class="other-posts-list">
             <li><a href="index.html">“Lorem ipsum dolor sit amet, consectetur.”</a></li>
             <li><a href="about.html">“Lorem ipsum dolor”</a></li>
             <li><a href="contact.html">“Lorem ipsum dolor”</a></li>
           </ul>
-      </div>
-     
-      <!-- <div class="blog-owner-section text-center border-left p-3" >
-        <div><img src="img/original.jpg" alt="profile pic" class="rounded-circle"></div>
-        <div>
-          <h4>Blog Owner Name</h4>
-          <h6 class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</h6>
         </div>
       </div>
-
-      <div class="detailes-section p-4">
-        <h3>Lorem ipsum dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum provident officia nulla. Laudantium, nobis laboriosam quaerat perferendis distinctio deserunt provident accusantium! Laborum dolorem saepe error fugiat sapiente necessitatibus reiciendis tempore molestias incidunt, itaque, harum, placeat asperiores impedit inventore et deleniti, neque eos iure nobis voluptate. Natus dolorem sequi, quasi optio necessitatibus, atque, pariatur ut maiores omnis fugiat veritatis. Nobis velit nesciunt veniam sapiente voluptas facere nisi aliquam a voluptatem fugiat saepe maiores dicta itaque tenetur voluptate ullam beatae iure necessitatibus cum, ipsa blanditiis et illo incidunt quibusdam molestiae. Quibusdam est inventore accusamus labore rerum, distinctio amet unde hic quas vel.</p>
-        <h4>Lorem ipsum dolor</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum provident officia nulla. Laudantium, nobis laboriosam quaerat perferendis distinctio deserunt provident accusantium! Laborum dolorem saepe error fugiat sapiente necessitatibus reiciendis tempore molestias incidunt, itaque, harum, placeat asperiores impedit inventore et deleniti, neque eos iure nobis voluptate. Natus dolorem sequi, quasi optio necessitatibus, atque, pariatur ut maiores omnis fugiat veritatis. Nobis velit nesciunt veniam sapiente voluptas facere nisi aliquam a voluptatem fugiat saepe maiores dicta itaque tenetur voluptate ullam beatae iure necessitatibus cum, ipsa blanditiis et illo incidunt quibusdam molestiae. Quibusdam est inventore accusamus labore rerum, distinctio amet unde hic quas vel.</p>
-      </div>
-    </div> -->
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -90,11 +93,8 @@
         </div>
       </div>
     </footer>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
 
 </body>
 </html>
